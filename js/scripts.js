@@ -12,3 +12,24 @@ $(function() {
         }
     });
 });
+/*
+$('#loginButton').modal({
+    show: true,
+    keyboard: true,
+});*/
+
+$('#loginButton').click(function() {
+    $('#loginModal').modal('show');
+});
+
+$('.close').click(function() {
+    $('#loginModal').modal('hide');
+});
+
+$('#reserveButton').click(function() {
+    $('#reserveModal').modal('show');
+});
+
+$('.close').click(function() {
+    $('#reserveModal').modal('hide');
+});
